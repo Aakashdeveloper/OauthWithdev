@@ -1,0 +1,19 @@
+ npm i body-parser cors ejs express request superagent
+https://developer.github.com/apps/building-oauth-apps/authorizing-oauth-apps/
+
+
+https://github.com/login/oauth/authorize?client_id=9e74b4020e90cc36b963
+
+
+1> Make one get request to with client ID
+https://github.com/login/oauth/authorize?client_id=9e74b4020e90cc36b963
+
+>> In Response you will get the code
+
+2> Now send code, client_id, client_Serecet in post APi
+https://github.com/login/oauth/access_token
+>> In Reponse you will get the token
+
+3> Now Pass this token to next get APi
+ https://api.github.com/user
+>> in response you will get user information
